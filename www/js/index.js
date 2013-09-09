@@ -39,13 +39,10 @@ var tik = setInterval(function() {
 		i++;
 }, 1000);
 
-
-
 setTimeout(function() {
 		//close Splash
         navigator.splashscreen.hide();
 		console.log('close splash');
-
 		// remove timer
 		window.clearInterval(tik);
 }, 5000);
