@@ -31,6 +31,8 @@ var app = {
 		navigator.splashscreen.show();
     }
 };
+
+// interval timer each 1 second
 var i = 1;
 var tik = setInterval(function() {
 		console.log('tik',i);
@@ -40,7 +42,10 @@ var tik = setInterval(function() {
 
 
 setTimeout(function() {
+		//close Splash
         navigator.splashscreen.hide();
 		console.log('close splash');
+
+		// remove timer
 		window.clearInterval(tik);
 }, 5000);
